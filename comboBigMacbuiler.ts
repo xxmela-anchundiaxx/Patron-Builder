@@ -1,8 +1,8 @@
 class ComboBuilder implements ComboBuilder{
-    private combo: combo;
+    private combo: Combo;
 
     constructor(){
-        this.combo= new combo();
+        this.combo= new Combo();
     }
     construirHambuerguesa(): void {
         this.combo.setHamburguesa('Big Mac');
@@ -14,7 +14,7 @@ class ComboBuilder implements ComboBuilder{
         this.combo.setPapas('Papas medianas');
     }
 
-    obtenerCombo(): combo {
+    obtenerCombo(): Combo {
         return this.combo;
 
     }
